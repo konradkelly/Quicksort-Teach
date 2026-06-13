@@ -13,7 +13,7 @@ public class Assingment {
             System.out.print(num + " ");
         }
 
-        Quicksort(test, test.length-1);
+        Quicksort(test);
 
         System.out.println("Sorted array:");
         for (int num : test) {
@@ -21,7 +21,11 @@ public class Assingment {
         }
     }
 
-    public static void Quicksort(int[] input, int target){
+    public static void Quicksort(int[] input, int upper, int lower){
         //Code Goes here
+    }
+
+    public static void Quicksort(int[] input) {
+        Quicksort(input, input.length-1, 0);
     }
 }
