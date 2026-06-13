@@ -26,6 +26,7 @@ public class Assingment {
     }
 
     public static void Quicksort(int[] input) {
-        Quicksort(input, input.length-1, 0);
+        //Change this based on how you choose your pivot
+        Quicksort(input, new Random().nextInt(input.length), 0);
     }
 }
